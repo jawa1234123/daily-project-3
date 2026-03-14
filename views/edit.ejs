@@ -1,0 +1,36 @@
+<div class="container mt-5">
+
+<h2>Edit Alumni</h2>
+
+<form method="POST">
+
+<input type="hidden" name="id" value="<%= data.id %>">
+
+<div class="mb-3">
+<label>Nama</label>
+<input class="form-control" name="nama" value="<%= data.nama %>">
+</div>
+
+<div class="mb-3">
+<label>Jurusan</label>
+<input class="form-control" name="jurusan" value="<%= data.jurusan %>">
+</div>
+
+<div class="mb-3">
+<label>Status</label>
+
+<select class="form-control" name="status">
+
+<option>Bekerja</option>
+<option>Studi Lanjut</option>
+<option>Wirausaha</option>
+
+</select>
+
+</div>
+
+<button class="btn btn-warning">Update</button>
+
+</form>
+
+</div>
